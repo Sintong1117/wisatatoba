@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Destinasi | Toba Explore</title>
+    <link rel="stylesheet" href="css/destinasi.css">
+</head>
+
+<body>
+    <header class="navbar"><a class="logo" href="index.html">TOBA<span>EXPLORE</span></a><button class="menu-toggle"
+            id="menuToggle">☰</button>
+        <nav id="navMenu"><a href="index.html">Beranda</a><a class="active" href="destinasi.html">Destinasi</a><a
+                href="budaya.html">Budaya</a><a href="kuliner.html">Kuliner</a><a href="galeri.html">Galeri</a></nav>
+    </header>
+    <!-- <section class="page-head">
+        <p>DESTINASI PILIHAN</p>
+        <h1>Temukan tempat indah di sekitar Toba</h1>
+    </section> -->
+    <section class="page-head-slider">
+
+        <div class="slide active">
+            <p>DESTINASI PILIHAN</p>
+            <h1>Temukan tempat indah di sekitar Toba</h1>
+        </div>
+
+        <div class="slide">
+            <p>PESONA ALAM</p>
+            <h1>Nikmati keindahan alam Danau Toba</h1>
+        </div>
+
+        <div class="slide">
+            <p>WISATA BUDAYA</p>
+            <h1>Kenali kekayaan budaya Batak</h1>
+        </div>
+
+    </section>
+    <main class="grid">
+        <article class="place"><img src="images/samosir.jpg" alt="Pulau Samosir">
+            <div><span>01</span>
+                <h2>Pulau Samosir</h2>
+                <p>Pulau di tengah Danau Toba yang kaya akan sejarah dan budaya Batak.</p><button
+                    onclick="showInfo('Samosir','Jangan lewatkan Tomok, Ambarita, dan panorama indah dari perbukitan Samosir.')">Lihat
+                    info</button>
+            </div>
+        </article>
+        <article class="place"><img src="images/holbung.jpg" alt="Bukit Holbung">
+            <div><span>02</span>
+                <h2>Bukit Holbung</h2>
+                <p>Perbukitan hijau dengan panorama Danau Toba yang luas.</p><button
+                    onclick="showInfo('Holbung','Waktu favorit untuk menikmati pemandangan adalah pagi atau menjelang matahari terbenam.')">Lihat
+                    info</button>
+            </div>
+        </article>
+        <article class="place"><img src="images/efrata.jpg" alt="Air Terjun Efrata">
+            <div><span>03</span>
+                <h2>Air Terjun Efrata</h2>
+                <p>Air terjun dengan suasana sejuk dan alami di kawasan Sianjur Mulamula.</p><button
+                    onclick="showInfo('Efrata','Nikmati suasana alam, tetapi tetap jaga kebersihan dan ikuti aturan setempat.')">Lihat
+                    info</button>
+            </div>
+        </article>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-box"><button onclick="closeInfo()">×</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+        </div>
+    </div>
+    <footer>© 2026 Toba Explore</footer>
+    <script src="js/destinasi.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+const menu=document.getElementById('menuToggle');const nav=document.getElementById('navMenu');menu.addEventListener('click',()=>nav.style.display=nav.style.display==='flex'?'none':'flex');
